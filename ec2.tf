@@ -2,7 +2,7 @@
 resource "aws_instance""instance1"{
 ami="ami-0f409bae3775dc8e5"
 instance_type="t2.micro"
-key_name="ajay"
+key_name="srikanth"
 vpc_security_group_ids=["${aws_security_group.demosg.id}"]
 subnet_id=aws_subnet.public-subnet-1.id
 associate_public_ip_address=true
