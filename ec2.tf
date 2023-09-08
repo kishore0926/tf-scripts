@@ -10,3 +10,4 @@ user_data=file("data.sh")
 tags={
 Name="my public insatance1"
 }
+}
