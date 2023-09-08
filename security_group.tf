@@ -1,5 +1,5 @@
 #creating security group.tf
- resource "aws_security_group""demosg" {
+resource "aws_security_group""demosg" {
 vpc_id=aws_vpc.demovpc.id
 ingress{
 from_port=80
