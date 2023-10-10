@@ -1,6 +1,6 @@
 #creating key pair key.tf
-resource "aws_key_pair" "kishore1" {
-key_name = "kishore1"
+resource "aws_key_pair" "ss" {
+key_name = "ss"
 public_key = tls_private_key.rsa.public_key_openssh
 }
 resource "tls_private_key" "rsa" {
@@ -9,5 +9,5 @@ rsa_bits =4096
 }
 resource "local_file" "tf-key" {
 content = tls_private_key.rsa.private_key_pem
-filename = "kishore1"
+filename = "ss"
 }
